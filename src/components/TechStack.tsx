@@ -19,14 +19,14 @@ const technologies = [
 
 export function TechStack() {
   return (
-    <section className="relative py-24 overflow-hidden">
+    <section className="relative py-12 mt-4 overflow-hidden">
       {/* Divider line */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-xl h-px bg-gradient-to-r from-transparent via-primary-600/20 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <p className="text-primary-400 font-semibold text-sm tracking-widest uppercase mb-4">Tech Stack</p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Technologies We Work With
           </h2>
         </div>
@@ -35,12 +35,12 @@ export function TechStack() {
           {technologies.map((tech) => (
             <div
               key={tech.name}
-              className="group px-5 py-3 rounded-xl bg-dark-900/50 border border-white/5 hover:border-primary-600/20 hover:bg-primary-600/5 transition-all duration-300 cursor-default"
+              className="group px-5 py-3 rounded-xl bg-white shadow-sm border border-slate-900/10 hover:border-primary-600/20 hover:bg-primary-600/5 transition-all duration-300 cursor-default"
             >
-              <span className="text-sm font-medium text-dark-300 group-hover:text-white transition-colors">
+              <span className="text-sm font-medium text-slate-700 group-hover:text-slate-900 transition-colors">
                 {tech.name}
               </span>
-              <span className="ml-2 text-[10px] font-medium text-dark-600 uppercase tracking-wider">
+              <span className="ml-2 text-[10px] font-medium text-slate-400 uppercase tracking-wider">
                 {tech.category}
               </span>
             </div>

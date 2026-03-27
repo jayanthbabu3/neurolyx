@@ -17,7 +17,7 @@ interface ServiceCardProps {
 
 function ServiceCard({ icon: Icon, title, description, features }: ServiceCardProps) {
   return (
-    <div className="group relative p-8 rounded-2xl bg-dark-900/50 border border-white/5 hover:border-primary-600/20 transition-all duration-500 hover:-translate-y-1">
+    <div className="group relative p-8 rounded-2xl bg-white shadow-sm border border-slate-900/10 hover:border-primary-600/20 transition-all duration-500 hover:-translate-y-1">
       {/* Hover glow */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-primary-600/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -26,12 +26,12 @@ function ServiceCard({ icon: Icon, title, description, features }: ServiceCardPr
           <Icon size={26} className="text-primary-400" />
         </div>
 
-        <h3 className="text-xl font-bold text-white mb-3">{title}</h3>
-        <p className="text-dark-400 leading-relaxed mb-6">{description}</p>
+        <h3 className="text-xl font-bold text-slate-900 mb-3">{title}</h3>
+        <p className="text-slate-600 leading-relaxed mb-6">{description}</p>
 
         <ul className="space-y-2.5">
           {features.map((feature) => (
-            <li key={feature} className="flex items-start gap-2.5 text-sm text-dark-400">
+            <li key={feature} className="flex items-start gap-2.5 text-sm text-slate-600">
               <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary-500 shrink-0" />
               {feature}
             </li>
@@ -107,17 +107,17 @@ const services: ServiceCardProps[] = [
 
 export function Services() {
   return (
-    <section id="services" className="relative py-32">
+    <section id="services" className="relative py-16 mt-8">
       <div className="absolute inset-0 bg-radial-section" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         {/* Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <p className="text-primary-400 font-semibold text-sm tracking-widest uppercase mb-4">What We Do</p>
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
             End-to-End Technology Services
           </h2>
-          <p className="mt-6 text-lg text-dark-400 max-w-2xl mx-auto">
+          <p className="mt-6 text-lg text-slate-600 max-w-2xl mx-auto">
             From ideation to deployment, we deliver full-spectrum engineering services
             that turn ambitious ideas into production-grade products.
           </p>

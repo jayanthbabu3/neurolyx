@@ -2,7 +2,7 @@ import { Mail, MapPin, Linkedin, ArrowUpRight } from 'lucide-react'
 
 export function Contact() {
   return (
-    <section id="contact" className="relative py-32">
+    <section id="contact" className="relative py-16 mt-8">
       <div className="absolute inset-0 bg-radial-section" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
@@ -10,11 +10,11 @@ export function Contact() {
           {/* Left — Info */}
           <div>
             <p className="text-primary-400 font-semibold text-sm tracking-widest uppercase mb-4">Contact</p>
-            <h2 className="text-4xl sm:text-5xl font-extrabold text-white tracking-tight">
+            <h2 className="text-4xl sm:text-5xl font-extrabold text-slate-900 tracking-tight">
               Let's Build Something<br />
               <span className="text-gradient">Together</span>
             </h2>
-            <p className="mt-6 text-lg text-dark-400 leading-relaxed max-w-lg">
+            <p className="mt-6 text-lg text-slate-600 leading-relaxed max-w-lg">
               Whether you have a product idea, need a technology partner, or want to explore
               how AI can transform your business — we'd love to hear from you.
             </p>
@@ -25,8 +25,8 @@ export function Contact() {
                   <Mail size={20} className="text-primary-400" />
                 </div>
                 <div>
-                  <p className="text-sm text-dark-500 mb-1">Email</p>
-                  <a href="mailto:neurolyxtechnologies@gmail.com" className="text-white hover:text-primary-400 transition-colors font-medium">
+                  <p className="text-sm text-slate-500 mb-1">Email</p>
+                  <a href="mailto:neurolyxtechnologies@gmail.com" className="text-slate-900 hover:text-primary-400 transition-colors font-medium">
                     neurolyxtechnologies@gmail.com
                   </a>
                 </div>
@@ -37,8 +37,8 @@ export function Contact() {
                   <MapPin size={20} className="text-primary-400" />
                 </div>
                 <div>
-                  <p className="text-sm text-dark-500 mb-1">Headquarters</p>
-                  <p className="text-white font-medium">India</p>
+                  <p className="text-sm text-slate-500 mb-1">Headquarters</p>
+                  <p className="text-slate-900 font-medium">India</p>
                 </div>
               </div>
 
@@ -47,12 +47,12 @@ export function Contact() {
                   <Linkedin size={20} className="text-primary-400" />
                 </div>
                 <div>
-                  <p className="text-sm text-dark-500 mb-1">LinkedIn</p>
+                  <p className="text-sm text-slate-500 mb-1">LinkedIn</p>
                   <a
                     href="https://www.linkedin.com/company/neurolyx-technologies/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white hover:text-primary-400 transition-colors font-medium inline-flex items-center gap-1"
+                    className="text-slate-900 hover:text-primary-400 transition-colors font-medium inline-flex items-center gap-1"
                   >
                     Neurolyx Technologies
                     <ArrowUpRight size={14} />
@@ -64,13 +64,13 @@ export function Contact() {
 
           {/* Right — CTA Card */}
           <div className="flex items-center">
-            <div className="w-full p-10 rounded-2xl bg-dark-900/60 border border-white/5 relative overflow-hidden">
+            <div className="w-full p-10 rounded-2xl bg-white/60 border border-slate-900/10 relative overflow-hidden">
               {/* Background glow */}
               <div className="absolute -top-20 -right-20 w-60 h-60 bg-primary-600/10 rounded-full blur-[80px]" />
 
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold text-white mb-3">Ready to start a project?</h3>
-                <p className="text-dark-400 leading-relaxed mb-8">
+                <h3 className="text-2xl font-bold text-slate-900 mb-3">Ready to start a project?</h3>
+                <p className="text-slate-600 leading-relaxed mb-8">
                   Tell us about your idea and we'll get back to you within 24 hours
                   with an initial consultation plan.
                 </p>
@@ -88,14 +88,14 @@ export function Contact() {
                     href="https://www.linkedin.com/company/neurolyx-technologies/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full px-8 py-4 text-base font-semibold text-dark-300 border border-white/10 rounded-xl hover:bg-white/5 hover:text-white hover:border-white/20 transition-all"
+                    className="flex items-center justify-center gap-2 w-full px-8 py-4 text-base font-semibold text-slate-700 border border-slate-900/15 rounded-xl hover:bg-slate-900/5 hover:text-slate-900 hover:border-slate-900/20 transition-all"
                   >
                     <Linkedin size={18} />
                     Connect on LinkedIn
                   </a>
                 </div>
 
-                <p className="mt-6 text-center text-sm text-dark-600">
+                <p className="mt-6 text-center text-sm text-slate-400">
                   No spam, no obligations — just a conversation.
                 </p>
               </div>

@@ -10,7 +10,7 @@ export function Hero() {
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-primary-600/10 rounded-full blur-[100px] animate-pulse-slow" />
       <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-primary-500/8 rounded-full blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }} />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-32 pb-20 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 pb-12 text-center">
         {/* Badge */}
         <div className="animate-slide-up inline-flex items-center gap-2 px-4 py-2 rounded-full border-glow bg-primary-600/5 mb-8">
           <Sparkles size={14} className="text-primary-400" />
@@ -19,14 +19,14 @@ export function Hero() {
 
         {/* Headline */}
         <h1 className="animate-slide-up-delayed text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tight leading-[1.05] max-w-5xl mx-auto">
-          <span className="text-white">We Build </span>
+          <span className="text-slate-900">We Build </span>
           <span className="text-gradient">Intelligent</span>
           <br />
-          <span className="text-white">Software Products</span>
+          <span className="text-slate-900">Software Products</span>
         </h1>
 
         {/* Subtitle */}
-        <p className="animate-slide-up-delayed-2 mt-8 text-lg sm:text-xl text-dark-400 max-w-2xl mx-auto leading-relaxed">
+        <p className="animate-slide-up-delayed-2 mt-8 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
           Neurolyx Technologies crafts AI-powered platforms, cloud-native applications,
           and enterprise solutions that drive real business transformation.
         </p>
@@ -42,7 +42,7 @@ export function Hero() {
           </a>
           <a
             href="#products"
-            className="flex items-center gap-2 px-8 py-4 text-base font-semibold text-dark-300 border border-white/10 rounded-xl hover:bg-white/5 hover:text-white hover:border-white/20 transition-all"
+            className="flex items-center gap-2 px-8 py-4 text-base font-semibold text-slate-700 border border-slate-900/15 rounded-xl hover:bg-slate-900/5 hover:text-slate-900 hover:border-slate-900/20 transition-all"
           >
             View Our Products
           </a>
@@ -57,15 +57,15 @@ export function Hero() {
             { value: '24/7', label: 'Reliable Systems' },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="text-2xl sm:text-3xl font-bold text-white">{stat.value}</div>
-              <div className="mt-1 text-xs sm:text-sm text-dark-500">{stat.label}</div>
+              <div className="text-2xl sm:text-3xl font-bold text-slate-900">{stat.value}</div>
+              <div className="mt-1 text-xs sm:text-sm text-slate-500">{stat.label}</div>
             </div>
           ))}
         </div>
       </div>
 
       {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-dark-950 to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-50 to-transparent" />
     </section>
   )
 }

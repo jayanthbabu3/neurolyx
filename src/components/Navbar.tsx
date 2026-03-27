@@ -22,7 +22,7 @@ export function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-dark-950/80 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/10'
+          ? 'bg-slate-50/80 backdrop-blur-xl border-b border-slate-900/10 shadow-lg shadow-black/10'
           : 'bg-transparent'
       }`}
     >
@@ -30,11 +30,11 @@ export function Navbar() {
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
           <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-primary-500 to-primary-700 flex items-center justify-center shadow-lg shadow-primary-600/20 group-hover:shadow-primary-600/40 transition-shadow">
-            <span className="text-white font-extrabold text-lg leading-none">N</span>
+            <span className="text-slate-900 font-extrabold text-lg leading-none">N</span>
           </div>
           <div className="flex flex-col">
-            <span className="text-white font-bold text-lg tracking-tight leading-tight">Neurolyx</span>
-            <span className="text-dark-400 text-[10px] font-medium tracking-widest uppercase leading-tight">Technologies</span>
+            <span className="text-slate-900 font-bold text-lg tracking-tight leading-tight">Neurolyx</span>
+            <span className="text-slate-600 text-[10px] font-medium tracking-widest uppercase leading-tight">Technologies</span>
           </div>
         </a>
 
@@ -44,7 +44,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="px-4 py-2 text-sm text-dark-300 hover:text-white rounded-lg hover:bg-white/5 transition-all"
+              className="px-4 py-2 text-sm text-slate-700 hover:text-slate-900 rounded-lg hover:bg-slate-900/5 transition-all"
             >
               {link.label}
             </a>
@@ -60,7 +60,7 @@ export function Navbar() {
         {/* Mobile toggle */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 text-dark-300 hover:text-white transition-colors"
+          className="md:hidden p-2 text-slate-700 hover:text-slate-900 transition-colors"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -68,14 +68,14 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-dark-950/95 backdrop-blur-xl border-t border-white/5 animate-fade-in">
+        <div className="md:hidden bg-slate-50/95 backdrop-blur-xl border-t border-slate-900/10 animate-fade-in">
           <div className="px-6 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="px-4 py-3 text-dark-300 hover:text-white hover:bg-white/5 rounded-lg transition-all"
+                className="px-4 py-3 text-slate-700 hover:text-slate-900 hover:bg-slate-900/5 rounded-lg transition-all"
               >
                 {link.label}
               </a>

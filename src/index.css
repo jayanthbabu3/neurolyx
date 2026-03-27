@@ -15,17 +15,17 @@
   --color-primary-900: #1e3a8a;
   --color-primary-950: #172554;
 
-  --color-dark-50: #f8fafc;
-  --color-dark-100: #f1f5f9;
-  --color-dark-200: #e2e8f0;
-  --color-dark-300: #cbd5e1;
-  --color-dark-400: #94a3b8;
-  --color-dark-500: #64748b;
-  --color-dark-600: #475569;
-  --color-dark-700: #334155;
-  --color-dark-800: #1e293b;
-  --color-dark-900: #0f172a;
-  --color-dark-950: #020617;
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
 
 @layer base {
@@ -43,8 +43,8 @@
 
   body {
     font-family: var(--font-sans);
-    background-color: var(--color-dark-950);
-    color: #f0f0f8;
+    background-color: var(--color-slate-50);
+    color: var(--color-slate-900);
   }
 
   ::selection {
@@ -63,9 +63,19 @@
 
   .bg-grid {
     background-image:
-      linear-gradient(rgba(37, 99, 235, 0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(37, 99, 235, 0.03) 1px, transparent 1px);
-    background-size: 64px 64px;
+      linear-gradient(rgba(37, 99, 235, 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(37, 99, 235, 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: move-grid 4s linear infinite;
+  }
+
+  @keyframes move-grid {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 40px 40px;
+    }
   }
 
   .bg-radial-hero {
